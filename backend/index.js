@@ -15,8 +15,8 @@ app.use(express.urlencoded({ limit: '50mb', extended: true }));
 // Middleware to parse JSON bodies
 app.use(express.json());
 app.use(cors({
-    origin:process.env.FRONTEND_URL,
-    credentials:true
+    origin: process.env.FRONTEND_URL, 
+    credentials: true,
 }));
 app.use(cookieParser())
 
