@@ -5,7 +5,7 @@ require("dotenv").config();
 const connectDB = require("./config/db");
 const router = require('./routes/index');
 const app = express();
-
+app.get
 
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ limit: '50mb', extended: true }));
