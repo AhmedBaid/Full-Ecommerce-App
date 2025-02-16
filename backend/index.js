@@ -5,6 +5,9 @@ require("dotenv").config();
 const connectDB = require("./config/db");
 const router = require('./routes/index');
 const app = express();
+app.get("/", (req, res) => {
+    res.send("Backend is working!");
+});
 
 
 app.use(express.json({ limit: '50mb' }));
